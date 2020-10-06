@@ -7,7 +7,7 @@ import VolunterList from '../VolunterList/VolunterList';
 
 const Admin = () => {
     const handleEventsAll = () => {
-        fetch("http://localhost:5000/addEvent", 
+        fetch("https://pure-gorge-03291.herokuapp.com/addEvent", 
         { 
             method:'POST',
             headers:{
@@ -22,7 +22,7 @@ const Admin = () => {
 
 
     useEffect(() => {
-        fetch('http://localhost:5000/registerdEvent')
+        fetch('https://pure-gorge-03291.herokuapp.com/registerdEvent')
         .then(res => res.json())
         .then(data =>{
             const allData = {...data, ...eventdetails, ...loggedInUser}

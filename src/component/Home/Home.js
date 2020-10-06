@@ -26,7 +26,7 @@ const Home = () => {
 
 
     useEffect(() =>{
-        fetch('http://localhost:5000/loadEvents')
+        fetch('https://pure-gorge-03291.herokuapp.com/loadEvents')
         .then(res => res.json())
         .then(data =>setEvent(data))
     }, [])

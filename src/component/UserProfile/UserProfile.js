@@ -5,7 +5,7 @@ const UserProfile = (props) => {
     const {name, img, title, _id} = props.event;
     const handleDelete = (id) =>{
         console.log(id);
-        fetch(`http://localhost:5000/delete/${id}`, {
+        fetch(`https://pure-gorge-03291.herokuapp.com/delete/${id}`, {
             method: 'DELETE',
         })
         .then(res => res.json())

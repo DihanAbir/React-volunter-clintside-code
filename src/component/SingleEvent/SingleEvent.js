@@ -12,7 +12,7 @@ const SingleEvent = () => {
         // console.log("clicked");
         const newBooking = { ...eventdetails, ...loggedInUser }
         // console.log(newBooking)
-        fetch('http://localhost:5000/addUserEvent', 
+        fetch('https://pure-gorge-03291.herokuapp.com/addUserEvent', 
         { 
             method:'POST',
             headers:{

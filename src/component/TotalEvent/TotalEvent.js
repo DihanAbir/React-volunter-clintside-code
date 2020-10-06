@@ -9,7 +9,7 @@ const TotalEvent = () => {
 
 
     useEffect(() => {
-        fetch('http://localhost:5000/registerdEvent?email='+loggedInUser.email)
+        fetch('https://pure-gorge-03291.herokuapp.com/registerdEvent?email='+loggedInUser.email)
         .then(res => res.json())
         .then(data =>setRegisterEvent(data) )
     }, [])
